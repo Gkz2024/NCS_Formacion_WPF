@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NCS_Formacion_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="343.926" Width="697.343">
+    <DockPanel>
+
+        <ListBox Name="ListaBusqueda" DockPanel.Dock="Left" Width="100">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name = "Busqueda" Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding NombreBusqueda}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Margin="0,0,-8,0">
+            <!--<Button Name="Guardar" Click="saveMovie" ></Button>-->
+
+            <TextBox x:Name="txbTitulo" HorizontalAlignment="Left" Height="23" Margin="77,79,0,0" TextWrapping="Wrap" Text="{Binding Path=Titulo}" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txbAno" HorizontalAlignment="Left" Height="23" Margin="216,79,0,0" TextWrapping="Wrap" Text="{Binding Path=Ano}" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txbGenero" HorizontalAlignment="Left" Height="23" Margin="353,79,0,0" TextWrapping="Wrap" Text="{Binding Path=Genero}" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="button" Content="Buscar" HorizontalAlignment="Left" Margin="494,79,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+
+            <Button x:Name="button1" Content="Abrir" HorizontalAlignment="Left" Margin="494,150,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+            <Label x:Name="label" Content="Titulo" HorizontalAlignment="Left" Margin="77,48,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Año" HorizontalAlignment="Left" Margin="216,48,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label2" Content="Genero" HorizontalAlignment="Left" Margin="353,48,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label3" Content="Resultado" HorizontalAlignment="Left" Margin="77,119,0,0" VerticalAlignment="Top"/>
+
+            <ListView Name="listView" HorizontalAlignment="Left" Height="107" Margin="77,150,0,0" VerticalAlignment="Top" Width="396">
+                <ListView.View>
+                    <GridView x:Name="Pelicula">
+                        <GridViewColumn Header="Title" Width="120" DisplayMemberBinding="{Binding Title}" />
+                        <GridViewColumn Header="Year" Width="50" DisplayMemberBinding="{Binding Year}" />
+                        <GridViewColumn Header="Type" Width="150" DisplayMemberBinding="{Binding Type}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </Grid>
+
+
+    </DockPanel>
 </Window>

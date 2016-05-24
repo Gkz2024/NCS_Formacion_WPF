@@ -1,1 +1,17 @@
 C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\bin\Debug\NCS_Formacion_WPF.exe.config
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\bin\Debug\NCS_Formacion_WPF.exe
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\bin\Debug\NCS_Formacion_WPF.pdb
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\App.g.cs
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF_MarkupCompile.cache
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF_MarkupCompile.lref
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\MainWindow.baml
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.g.resources
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.Properties.Resources.resources
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.csproj.GenerateResource.Cache
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.exe
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.pdb
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\DetallePelicula.g.cs
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\DetallePelicula.baml

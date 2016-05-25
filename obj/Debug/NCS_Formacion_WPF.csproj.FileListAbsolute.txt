@@ -15,3 +15,6 @@ C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacio
 C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.pdb
 C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\DetallePelicula.g.cs
 C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\DetallePelicula.baml
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\NCS_Formacion_WPF.csprojResolveAssemblyReference.cache
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\SaveMovie.g.cs
+C:\Users\jmgonzalez\Documents\Visual Studio 2015\Projects\Formacion\NCS_Formacion_WPF\obj\Debug\SaveMovie.baml

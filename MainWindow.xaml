@@ -6,12 +6,43 @@
         xmlns:local="clr-namespace:NCS_Formacion_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="343.926" Width="697.343">
+
+
+
     <DockPanel>
 
-        <ListBox Name="ListaBusqueda" DockPanel.Dock="Left" Width="100">
+
+
+        <ListBox Name="ListaBusqueda" DockPanel.Dock="Left" Width="20">
+            <ListBox.Style>
+                <Style TargetType="ListBox">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.800" Storyboard.TargetProperty="Width" To="20" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.300" Storyboard.TargetProperty="Width" To="100" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.Style>
+
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid x:Name = "Busqueda" Margin="0,2">
+                     
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="100" />
@@ -20,6 +51,7 @@
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
+           
         </ListBox>
 
         <Grid Margin="0,0,-8,0">
@@ -45,6 +77,8 @@
                     </GridView>
                 </ListView.View>
             </ListView>
+            <Button x:Name="button2" Content="Guardar" HorizontalAlignment="Left" Margin="494,195,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+            <Button x:Name="button3" Content="Limpiar" HorizontalAlignment="Left" Margin="494,237,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click"/>
 
 
         </Grid>

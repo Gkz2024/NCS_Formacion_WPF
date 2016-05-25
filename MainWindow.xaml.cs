@@ -33,7 +33,8 @@ namespace NCS_Formacion_WPF
             busquedaActual = new Busqueda();
             this.DataContext = busquedaActual;
             ListaBusqueda.ItemsSource = ListaBusquedas;
-            ListaBusqueda.ItemsSource = ListaBusquedas;
+            //busquedaTest.NombreBusqueda = "Prueba";
+            //ListaBusquedas.Add(busquedaTest);
 
         }
 
@@ -68,9 +69,24 @@ namespace NCS_Formacion_WPF
                 DetallePelicula dp = new DetallePelicula();
                 dp.pelicula = (Pelicula)listView.SelectedItem;
                 dp.Show();
+             
             }
 
 
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            SaveMovie sm = new SaveMovie();
+            sm.textBox.Text = "Nombre busqueda";
+            sm.Show();
+            busquedaActual.NombreBusqueda = sm.ResultadoNombreBusqueda;
+            ListaBusquedas.Add(busquedaActual);
         }
     }
 }

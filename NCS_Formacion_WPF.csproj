@@ -59,36 +59,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Busqueda_Model.cs" />
+    <Compile Include="Busqueda_ModelView.cs" />
+    <Compile Include="ObservableObject.cs" />
+    <Compile Include="Pelicula_Model.cs" />
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="SaveMovie.xaml.cs">
       <DependentUpon>SaveMovie.xaml</DependentUpon>
     </Compile>
-    <Page Include="DetallePelicula.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="Busqueda_View.xaml.cs">
+      <DependentUpon>Busqueda_View.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Busqueda.cs" />
-    <Compile Include="DetallePelicula.xaml.cs">
-      <DependentUpon>DetallePelicula.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SaveMovie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Busqueda_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pelicula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

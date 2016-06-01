@@ -14,6 +14,14 @@ namespace NCS_Formacion_WPF
         private string m_ano;
         private string m_genero;
 
+        public Busqueda_Model ()
+        {
+            this.Titulo = string.Empty;
+            this.Ano = string.Empty;
+            this.Genero = string.Empty;
+
+        }
+
         public string NombreBusqueda
         {
             get

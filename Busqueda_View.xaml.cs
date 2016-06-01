@@ -21,16 +21,18 @@ namespace NCS_Formacion_WPF
     {
         public Busqueda_View()
         {
-            InitializeComponent();
-            MainWindow app = new MainWindow();
+            
             Busqueda_ModelView viewModel = new Busqueda_ModelView();
-            app.DataContext = viewModel;
-            app.Show();
-        }
-
-        private void InitializeComponent()
-        {
+            Busqueda_Model Busqueda_Actual = new Busqueda_Model();
+            Busqueda_Actual.Titulo = "die";
+            viewModel.BusquedaActual = Busqueda_Actual;
+            this.DataContext = viewModel;
+            
+            this.Show();
+    
            
         }
+
+    
     }
 }

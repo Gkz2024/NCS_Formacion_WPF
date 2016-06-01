@@ -7,13 +7,32 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace NCS_Formacion_WPF
 {
     class Busqueda_ModelView : ObservableObject
     {
+       
+
         private Busqueda_Model _busquedaActual;
         private ICommand _buscarPelicula;
+        private ObservableCollection<Pelicula_Model> _resultado;
+
+        public ObservableCollection<Pelicula_Model> Resultado
+        {
+            get { return _resultado; }
+            set
+            {
+
+                if (value != _resultado)
+                {
+                    _resultado = value;
+                    OnPropertyChanged("Resultado");
+                }
+            }
+
+        }
 
         public Busqueda_Model BusquedaActual
         {
@@ -47,11 +66,14 @@ namespace NCS_Formacion_WPF
         {
             
             Busqueda_Model busqueda= new Busqueda_Model();
-
             string ret = GetJSon();
             Pelicula_Model Pelicula = new Pelicula_Model();
-            //Pelicula.Search
-            List<Pelicula_Model> peliculas = JsonConvert.DeserializeObject<List<Pelicula_Model>>(ret);
+            Resultado_Model ResultadoModel = new Resultado_Model();
+
+            ResultadoModel = JsonConvert.DeserializeObject<Resultado_Model>(ret);
+
+            this.Resultado = ResultadoModel.Search;          
+
             
 
         }

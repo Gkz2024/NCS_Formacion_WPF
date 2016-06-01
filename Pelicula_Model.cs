@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCS_Formacion_WPF
 {
-    class Pelicula_Model : ObservableObject
+    public class Pelicula_Model : ObservableObject
     {
 
             private string m_title;

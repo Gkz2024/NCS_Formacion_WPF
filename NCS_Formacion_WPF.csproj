@@ -61,6 +61,7 @@
     </ApplicationDefinition>
     <Compile Include="Busqueda_Model.cs" />
     <Compile Include="Busqueda_ModelView.cs" />
+    <Compile Include="Resultado_Model.cs" />
     <Compile Include="ObservableObject.cs" />
     <Compile Include="Pelicula_Model.cs" />
     <Compile Include="RelayCommand.cs" />
